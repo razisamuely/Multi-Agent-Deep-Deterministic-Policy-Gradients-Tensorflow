@@ -1,8 +1,7 @@
-![image](https://openai.com/content/images/2017/06/simple_adv_maddpg_notag.gif)
 
 <center>
   <figure>
-    <image src="https://tensorflow.org/tutorials/reinforcement_learning/images/cartpole-v0.gif">
+    <image src="https://openai.com/content/images/2017/06/simple_adv_maddpg_notag.gif">
     <figcaption>
       Trained actor-critic model in Cartpole-v0 environment
     </figcaption>
