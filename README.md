@@ -1,12 +1,5 @@
 
-<center>
-  <figure>
-    <image src="https://openai.com/content/images/2017/06/simple_adv_maddpg_notag.gif">
-    <figcaption>
-      Trained actor-critic model in Cartpole-v0 environment
-    </figcaption>
-  </figure>
-</center>
+![image](https://openai.com/content/images/2017/06/simple_adv_maddpg_notag.gif)
   
 # Multi-Agent-Deep-Deterministic-Policy-Gradients-Tensorflow
 
