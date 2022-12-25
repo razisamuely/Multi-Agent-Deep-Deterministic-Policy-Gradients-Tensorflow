@@ -36,6 +36,7 @@ if __name__ == '__main__':
     score_history = []
     evaluate = False
     best_score = 0
+    avg_score_interval = 100
 
     # if evaluate:
     #     maddpg_agents.load_checkpoint()
@@ -74,7 +75,7 @@ if __name__ == '__main__':
             episode_step += 1
 
         score_history.append(score)
-        avg_score = np.mean(score_history[-100:])
+        avg_score = np.mean(score_history[-avg_score_interval:])
         if not evaluate:
             if avg_score > best_score:
                 # maddpg_agents.save_checkpoint()
