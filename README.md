@@ -3,7 +3,7 @@
   
 # Multi-Agent-Deep-Deterministic-Policy-Gradients-Tensorflow
 
-Creating multi agent model using Twnsorflow 
+Solving multiagent agent problem using tensroflow of a simple multi-agent particle world with a continuous observation and discrete action space, along with some basic simulated physics.
 
 The repository heavily relies on philtabor [pytorch implementation](https://github.com/philtabor/Multi-Agent-Deep-Deterministic-Policy-Gradients) for [Multi Agent Actor Critic for Mixed Cooperative-Competitive Environments](https://arxiv.org/pdf/1706.02275.pdf)
 
@@ -14,4 +14,8 @@ The repository heavily relies on philtabor [pytorch implementation](https://gith
 3. Create [virtual environment](https://docs.python.org/3/library/venv.html) and activate it 
 
 4. Install [required dependecies](https://github.com/openai/multiagent-particle-envs#:~:text=Python%20(3.5.4)%2C%20OpenAI%20gym%20(0.10.5)%2C%20numpy%20(1.14.5))
+
+## Game rules
+
+[(copied from here)](https://github.com/openai/multiagent-particle-envs#:~:text=1%20adversary%20(red,deceive%20the%20adversary.)1 adversary (red), N good agents (green), N landmarks (usually N=2). All agents observe position of landmarks and other agents. One landmark is the ‘target landmark’ (colored green). Good agents rewarded based on how close one of them is to the target landmark, but negatively rewarded if the adversary is close to target landmark. Adversary is rewarded based on how close it is to the target, but it doesn’t know which landmark is the target landmark. So good agents have to learn to ‘split up’ and cover all landmarks to deceive the adversary.
 
