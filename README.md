@@ -22,4 +22,4 @@ The repository heavily relies on philtabor [pytorch implementation](https://gith
 
 1. Create python virtual env
 
-2. install [petting-zoo](https://github.com/Farama-Foundation/PettingZoo) ```pip install 'pettingzoo[all]'```
+2. install [petting-zoo](https://pettingzoo.farama.org/) with [MPE](https://pettingzoo.farama.org/environments/mpe/) dependecies ```pip install 'pettingzoo[mpe]'```
