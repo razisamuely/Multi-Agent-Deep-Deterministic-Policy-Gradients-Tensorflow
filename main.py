@@ -1,7 +1,9 @@
 import numpy as np
 # from maddpg import MADDPG
 # from buffer import MultiAgentReplayBuffer
-from make_env import make_env
+# from make_env import make_env
+from pettingzoo.mpe import simple_adversary_v2
+
 
 def obs_list_to_state_vector(observation):
     state = np.array([])
@@ -11,9 +13,10 @@ def obs_list_to_state_vector(observation):
 
 if __name__ == '__main__':
     #scenario = 'simple'
-    scenario = 'simple_adversary'
-    env = make_env(scenario)
-    n_agents = env.n
+    # scenario = 'simple_adversary'
+    env = simple_adversary_v2.env(N=2, max_cycles=25, continuous_actions=False)
+    # n_agents = env.N
+    n_agents = 2 
     actor_dims = []
     for i in range(n_agents):
         actor_dims.append(env.observation_space[i].shape[0])
